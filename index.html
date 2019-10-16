@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ceaser's CipherApp</title>
+        <script src="cipher.js"></script>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body onload="alert('Ta daaa!!!\n Here is the CipherApp\n Enjoy the Encryption of your Texts from prying eyes')">
+        <div id="main_content">
+            <img id="logo" src="./images - Edited.jpg" alt="">
+            <div><h1>Ceaser's CipherApp</h1></div>
+            <span>Enter Your Text into the TextArea below to be Encrypted:</span><br/>
+            <div class="entry">
+                <textarea id='inPut' name='inPut'></textarea><br/>
+                <button onclick="string(document.getElementById('inPut').value)" id="encrypt">Encrypt Text</button>
+                <button onclick="document.getElementById('inPut').value = ''" id="clear">Clear_Input</button><br/>
+            </div>
+            <div class="output">
+                <textarea id='outPut' name='outPut'></textarea><br/>
+                <button onclick="document.getElementById('outPut').innerHTML = ''" id="Output">Clear Output</button>
+            </div>
+            <img id="andela" src="./Capture.PNG" alt="andela_logo">
+        </div>
+    </body>
+</html>
